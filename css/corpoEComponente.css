@@ -1,0 +1,46 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparentw-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Lexend Deca", serif;
+    background-color: var(--very-light-gray-background-headings-buttons);
+}
+
+.componente {
+    align-self: center;
+    justify-self: center;
+    width: 57.375rem;
+    height: 31.25rem;
+    display: flex;
+}
+
+svg {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+footer {
+    align-self: center;
+}
+
+
+@media screen and (max-width: 376px) {
+    .componente {
+        flex-direction: column;
+        width: 20.3125rem;
+        height: 82.6875rem;
+    }
+    footer {
+        display: none;
+    }
+}

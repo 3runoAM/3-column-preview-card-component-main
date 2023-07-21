@@ -1,0 +1,87 @@
+.section {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--very-light-gray-background-headings-buttons);
+    font: 700 2.5rem Big Shoulders Display,serif;
+}
+
+.description{
+    width: 12rem;
+    color: var(--transparentw-white-paragraphs);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 152.5%; /* 1.42969rem */
+    margin-top: 0;
+}
+
+.description.suvs {
+    width: 13rem;
+}
+
+.description.luxury{
+    width: 13.1875rem;
+}
+
+.button {
+    width: 9.0625rem;
+    height: 3rem;
+    border-radius: 6.25rem;
+    border: none;
+    background: var(--very-light-gray-background-headings-buttons);
+    /**/
+    font: 500 1rem "Lexend Deca", serif;
+    margin-bottom: 1rem;
+}
+
+.top-content {
+    margin-top: 1rem;
+}
+
+.top-content, .button {
+    margin-left: 2.94rem;
+}
+
+
+@media screen and (max-width: 376px) {
+    .section {
+        width: 20.3125rem;
+        height: 27.5625rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .description.sedan {
+        width: 14rem;
+        margin-bottom: 0;
+    }
+
+    .description.suvs {
+        width: 13.8125rem;
+        margin-bottom: 0;
+    }
+
+    .description.luxury {
+        width: 14.375rem;
+        margin-bottom: 0;
+    }
+
+    .button {
+        margin-bottom: 3.5rem;
+    }
+}

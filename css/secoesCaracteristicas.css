@@ -1,0 +1,68 @@
+/*Caracteristicas individuais das seções*/
+.icon.sedan {
+    background: url("/assets/images/icon-sedans.svg");
+}
+
+.section.sedan {
+    background-color: var(--bright-orange);
+    border-radius: .625rem 0 0 .625rem;
+}
+
+.button.sedan {
+    color: var(--bright-orange);
+}
+
+.button.sedan:hover, .button.sedan:focus{
+    border: 3px solid var(--very-light-gray-background-headings-buttons);
+    color: var(--very-light-gray-background-headings-buttons);
+    background-color: var(--bright-orange);
+}
+
+/*------------------------------------*/
+.icon.suvs {
+    background: url("/assets/images/icon-suvs.svg");
+}
+
+.section.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.button.suvs {
+    color: var(--dark-cyan);
+}
+
+.button.suvs:hover, .button.suvs:focus{
+    border: 3px solid var(--very-light-gray-background-headings-buttons);
+    color: var(--very-light-gray-background-headings-buttons);
+    background-color: var(--dark-cyan);
+}
+/*------------------------------------*/
+.icon.luxury {
+    background: url("/assets/images/icon-luxury.svg");
+}
+
+.section.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 .625rem .625rem 0;
+}
+
+.button.luxury {
+    color: var(--very-dark-cyan);
+}
+
+.button.luxury:hover, button.luxury:focus {
+    border: 3px solid var(--very-light-gray-background-headings-buttons);
+    color: var(--very-light-gray-background-headings-buttons);
+    background-color: var(--very-dark-cyan);
+}
+/*------------------------------------*/
+
+@media screen and (max-width: 376px) {
+    .section.sedan{
+        border-radius: .625rem .625rem 0 0;
+    }
+
+    .section.luxury{
+        border-radius: 0 0 .625rem .625rem;
+    }
+}
